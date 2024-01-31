@@ -25,6 +25,7 @@ require(["esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer"], (Map, Ma
 url: "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_Boundaries_2022/FeatureServer/1"
 });
 
+
 map.add(featureLayer_1);
 
 var featureLayer_2 = new FeatureLayer({
