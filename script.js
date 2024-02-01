@@ -25,10 +25,10 @@ require(["esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer"], (Map, Ma
     type: "simple",  // autocasts as new SimpleRenderer()
     symbol: {
       type: "simple-fill",  // autocasts as new SimpleFillSymbol()
-      color: "transparent",  // No fill color
+      color: [0, 0, 0, 0],  // RGBA format, fully transparent
       outline: {  // autocasts as new SimpleLineSymbol()
-        color: "blue",  // Outline color
-        width: "2px"  // Outline width
+        color: [0, 0, 0, 1],  // Solid black outline
+        width: "1px"  // Outline width
       }
     }
   },
