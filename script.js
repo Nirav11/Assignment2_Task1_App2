@@ -83,12 +83,12 @@ require(["esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer"], (Map, Ma
       type: "fields",
       fieldInfos: [
                     {
-              fieldName: "Feature Type	",
+              fieldName: "Feature Type  ",
               label: "Feature Type	",
               visible: true
             },
             {
-              fieldName: "Area in SQ MI	",
+              fieldName: "Area in SQ MI  ",
               label: "Area in SQ MI	",
               visible: true
             },
