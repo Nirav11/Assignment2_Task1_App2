@@ -3,18 +3,18 @@ require(["esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer"], (Map, Ma
     basemap: "dark-gray"
   });
 
-const view = new MapView({
-  container: "viewDiv",
-  map: map,
-  extent: {
-    xmin: -10000000,
-    ymin: 2000000,
-    xmax: -7000000,
-    ymax: 8000000,
-    spatialReference: 102100
-  }
-});
-
+  const view = new MapView({
+    container: "viewDiv",
+    map: map,
+    extent: {
+      // Updated extent to show the United States
+      xmin: -13884029,
+      ymin: 2812916,
+      xmax: -7453304,
+      ymax: 6338219,
+      spatialReference: 102100
+    }
+  });
   /********************
    * Add feature layer
    ********************/
