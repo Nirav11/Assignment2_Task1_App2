@@ -78,22 +78,13 @@ require(["esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer"], (Map, Ma
 
   var featureLayer_2 = new FeatureLayer({
     url: "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_Parks/FeatureServer/0",
+    outFields: ["*"], // Fetch all fields
     popupTemplate: {
-      title: "{Name}",
-      content: [
-        {
-          type: "fields",
-          fieldInfos: [
-            {
-              fieldName: "Feature Type",
-              label: "Feature Type",
-              visible: true
-            },
-            {
-              fieldName: "Area in SQ MI",
-              label: "Area in SQ MI",
-              visible: true
-            }
+    title: "{Name}",
+    content: [{
+      type: "fields",
+      fieldInfos: [{
+        fieldName: "*", // Automatically display all fields
           ]
         }
       ]
