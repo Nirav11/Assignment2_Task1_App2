@@ -21,9 +21,9 @@ require(["esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer"], (Map, Ma
   var featureLayer_1 = new FeatureLayer({
     url: "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_Boundaries_2022/FeatureServer/1",
     renderer: {
-    type: "simple",  // autocasts as new SimpleRenderer()
+    type: "simple",  
     symbol: {
-      type: "simple-fill",  // autocasts as new SimpleFillSymbol()
+      type: "simple-fill",  
       color: "transparent",  // No fill color
       outline: {  // autocasts as new SimpleLineSymbol()
         color: "blue",  // Outline color
