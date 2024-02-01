@@ -84,8 +84,7 @@ require(["esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer"], (Map, Ma
               fieldName: "Area in SQ MI",
               label: "Area in SQ MI",
               visible: true
-            },
-            // Add other fields as needed
+            }
           ]
         }
       ]
