@@ -7,12 +7,11 @@ require(["esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer"], (Map, Ma
     container: "viewDiv",
     map: map,
     extent: {
-      // Updated extent to show the United States
-      xmin: -13884029,
-      ymin: 2812916,
-      xmax: -7453304,
-      ymax: 6338219,
-      spatialReference: 102100
+    xmin: -12500000,
+    ymin: 3000000,
+    xmax: -7000000,
+    ymax: 6500000,
+    spatialReference: 102100
     }
   });
   /********************
