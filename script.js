@@ -35,11 +35,30 @@ require(["esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer"], (Map, Ma
               visible: true
             },
             {
-              fieldName: "POPULATION_2022",
-              label: "Population 2022",
+              fieldName: "STATE_FIPS",
+              label: "STATE_FIPS",
               visible: true
             },
-            // Add other fields as needed
+            {
+              fieldName: "STATE_NAME",
+              label: "STATE_NAME",
+              visible: true
+            },          
+            {
+              fieldName: "POPULATION_2022",
+              label: "POPULATION_2022",
+              visible: true
+            }, 
+            {
+              fieldName: "POP22_SQMI",
+              label: "POP22_SQMI",
+              visible: true
+            },   
+            {
+              fieldName: "SQMI",
+              label: "SQMI",
+              visible: true
+            },   
           ]
         }
       ]
@@ -51,19 +70,19 @@ require(["esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer"], (Map, Ma
   var featureLayer_2 = new FeatureLayer({
     url: "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
     popupTemplate: {
-      title: "{Park Name}",
+      title: "{Name}",
       content: [
         {
           type: "fields",
           fieldInfos: [
             {
-              fieldName: "Unit Code",
-              label: "Unit Code",
+              fieldName: "Feature Type",
+              label: "Feature Type",
               visible: true
             },
             {
-              fieldName: "State",
-              label: "State",
+              fieldName: "Area in SQ MI",
+              label: "Area in SQ MI",
               visible: true
             },
             // Add other fields as needed
